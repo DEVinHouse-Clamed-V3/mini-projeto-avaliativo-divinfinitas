@@ -42,9 +42,9 @@ function renderizarMedicamentos() {
             <img src="${medicamento.imagem}" alt="${medicamento.nome}" class="card-img-top mb-2">
             <div class="card-body">
                 <h5 class="card-title">${medicamento.nome}</h5>
-                <p class="card-text"><strong>Laboratório:</strong> ${medicamento.laboratorio}</p>
-                <p class="card-text"><strong>Valor:</strong> R$ ${medicamento.preco}</p>
-                <button class="btn btn-danger" onclick="deletarMedicamento(${index})">Deletar</button>
+                <p class="card-text text-start mt-1"><strong>Laboratório:</strong> ${medicamento.laboratorio}</p>
+                <p class="card-text text-start mt-2"><strong>Valor:</strong> R$ ${medicamento.preco}</p>
+                <button class="btn btn-danger mt-3" onclick="deletarMedicamento(${index})">Deletar</button>
             </div>
         `;
 
