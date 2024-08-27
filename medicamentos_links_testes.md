@@ -6,7 +6,7 @@ https://scontent.ffln2-3.fna.fbcdn.net/v/t1.6435-9/191585574_831923147415331_317
 https://www.drogariaminasbrasil.com.br/media/product/9e6/dipirona-monoidratada-1g-com-10-comprimidos-generico-prati-donaduzzi-ed2.jpg
 
 Toragesic
-https://ortopedistaemsaopaulo.com.br/wp-content/uploads/2022/12/Toragesic.jpg)
+https://ortopedistaemsaopaulo.com.br/wp-content/uploads/2022/12/Toragesic.jpg
 
 Xarope
 
