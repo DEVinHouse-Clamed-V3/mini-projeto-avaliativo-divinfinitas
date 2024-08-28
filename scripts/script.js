@@ -44,8 +44,8 @@ function renderizarMedicamentos() {
                 <h5 class="card-title">${medicamento.nome}</h5>
                 <p class="card-text text-start mt-1"><strong>Laboratório:</strong> ${medicamento.laboratorio}</p>
                 <p class="card-text text-start mt-2"><strong>Valor:</strong> R$ ${medicamento.preco}</p>
-                <button class="btn btn-danger mt-3" onclick="deletarMedicamento(${index})">Deletar</button>
             </div>
+            <button class="btn btn-danger mt-3" onclick="deletarMedicamento(${index})">Deletar</button>
         `;
 
         lista.appendChild(medicamentoItem);
