@@ -46,6 +46,8 @@ nav {
     padding: 10px;
     width: 100%;
     border-bottom: 1px solid #6c757d6e;
+    background-color: #00D07E;
+    border-radius: 20px;
 }
 
 .container-bar {
@@ -199,17 +201,17 @@ input::-ms-input-placeholder {
 }
 
 .medicamento-card button {
-    background-color: red;
-    color: white;
+    /* background-color: red;
+    color: white; */
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 3px;
 }
 
-.medicamento-card button:hover {
+/* .medicamento-card button:hover {
     background-color: darkred;
-}
+} */
 
 /* Estilo para o Footer */
 footer {
