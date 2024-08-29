@@ -27,6 +27,10 @@ function adicionarMedicamento(nome, laboratorio, preco, imagem) {
     // Renderiza a lista de medicamentos
     renderizarMedicamentos();
 }
+
+
+
+
 function renderizarMedicamentos() {
     const lista = document.getElementById('listaMedicamentos');
     lista.innerHTML = ''; // Limpa a lista antes de renderizar
@@ -37,7 +41,7 @@ function renderizarMedicamentos() {
     medicamentos.forEach((medicamento, index) => {
         const medicamentoItem = document.createElement('div');
         medicamentoItem.classList.add('medicamento-card', 'card', 'mb-3', 'p-3', 'shadow-sm');
-
+        let thisUrl = medicamento.imagem
         medicamentoItem.innerHTML = `
             <img src="${medicamento.imagem}" alt="${medicamento.nome}" class="card-img-top mb-2">
             <div class="card-body">
@@ -45,12 +49,17 @@ function renderizarMedicamentos() {
                 <p class="card-text text-start mt-1"><strong>Laboratório:</strong> ${medicamento.laboratorio}</p>
                 <p class="card-text text-start mt-2"><strong>Valor:</strong> R$ ${medicamento.preco}</p>
             </div>
-            <button class="btn btn-danger mt-3" onclick="deletarMedicamento(${index})">Deletar</button>
+            <div>
+                <button class="btn btn-danger mt-3" onclick="deletarMedicamento(${index})">Deletar</button>
+                <button type ="button" id="showBtn" class="btn btn-secondary mt-3" onclick="showImage(${index})">Mostrar</button>
+            </div>
+            
         `;
 
         lista.appendChild(medicamentoItem);
     });
 }
+
 
 function deletarMedicamento(index) {
     const medicamentos = JSON.parse(localStorage.getItem('medicamentos')) || [];
@@ -86,3 +95,17 @@ document.getElementById('price').addEventListener('input', function() {
         priceLabel.textContent = 'Preço';
     }
 });
+
+function showImage(index) {
+    const medicamentos = JSON.parse(localStorage.getItem('medicamentos'));
+    let URL = medicamentos[index].imagem;
+    Swal.fire({
+        imageUrl: URL,
+        imageHeight: 500,
+        imageAlt: "A tall image"
+      })
+};
+
+
+
+
