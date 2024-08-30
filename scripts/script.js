@@ -85,16 +85,16 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('loggedInUser').textContent = username ? username : 'Usuário não encontrado';
 });
 
-document.getElementById('price').addEventListener('input', function() {
-    var value = this.value.trim();
-    var priceLabel = document.getElementById('priceLabel');
+// document.getElementById('price').addEventListener('input', function() {
+//     var value = this.value.trim();
+//     var priceLabel = document.getElementById('priceLabel');
     
-    if (value) {
-        priceLabel.textContent = `Preço: R$ ${value}`;
-    } else {
-        priceLabel.textContent = 'Preço';
-    }
-});
+//     if (value) {
+//         priceLabel.textContent = `Preço: R$ ${value}`;
+//     } else {
+//         priceLabel.textContent = 'Preço';
+//     }
+// });
 
 function showImage(index) {
     const medicamentos = JSON.parse(localStorage.getItem('medicamentos'));
@@ -102,7 +102,8 @@ function showImage(index) {
     Swal.fire({
         imageUrl: URL,
         imageHeight: 500,
-        imageAlt: "A tall image"
+        imageAlt: "A tall image",
+        confirmButtonText: "Voltar"
       })
 };
 
