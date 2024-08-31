@@ -2,8 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;  
-    box-sizing: border-box;
- 
+    box-sizing: border-box; 
 }
 
 
@@ -14,8 +13,8 @@ body {
 
 header {
     background-color: #f5f5f5;
-    padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 nav {
@@ -46,18 +45,17 @@ nav {
     padding: 10px;
     width: 100%;
     border-bottom: 1px solid #6c757d6e;
-    background-color: #00D07E;
-    border-radius: 20px;
+    background-color: #00712D;
 }
 
 .container-bar {
     display: flex;
     flex-wrap:wrap;
     align-items: center;
-    align-content: center;
     width: 100%;
     margin: 0;
     padding: 0;
+    color: #f5f5f5;
 }
 
 .mb-4 {
@@ -128,7 +126,7 @@ h1, h2 {
 }
 
 .medicamento-card {
-    background-color: #e0e0e0;
+    background-color: #D5ED9F;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -178,13 +176,18 @@ input::-ms-input-placeholder {
     display: flex;
     font-weight: bold; /* Deixa o texto em negrito */
     font-size: 14px; 
-    color: #333; 
     background-color: #f8f9fa; 
     padding: 5px 10px; 
     border-radius: 5px; 
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    
+    cursor: pointer;   
 }
+
+.button-login a:hover {
+    background-color: #01a77d;
+    border: 2px solid #f8f9fa;
+}
+
 
 .medicamento-card {
     border: 1px solid #ccc;
@@ -215,10 +218,10 @@ input::-ms-input-placeholder {
 
 /* Estilo para o Footer */
 footer {
-    background-color: #f5f5f5;
+    background-color: #0c326f;
     padding: 20px 0;
-    border-top: 1px solid #6c757d6e;
-    color: #333;
+    border-top: 2px solid #b16706;
+    color: #ffffff;
 }
 
 footer .container {
@@ -228,14 +231,14 @@ footer .container {
 }
 
 footer h5 {
-    color: #333;
+    color: #FFFBE6;
     margin-bottom: 15px;
     font-size: 16px;
 }
 
 footer p, footer ul, footer a {
     font-size: 14px;
-    color: #333;
+    color: #FFFBE6;
     margin-bottom: 5px;
     text-decoration: none;
 }
@@ -251,12 +254,16 @@ footer ul {
 }
 
 footer .bg-secondary {
-    background-color: #e0e0e0;
+    background-color: #000000;
 }
 
 footer .text-center {
     text-align: center;
     padding: 10px 0;
     font-size: 14px;
-    color: #333;
+    color: #FFFBE6;
+}
+
+#footer-bar {
+    background-color: #071d41;
 }
