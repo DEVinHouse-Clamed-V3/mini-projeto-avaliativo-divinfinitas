@@ -85,21 +85,11 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('loggedInUser').textContent = username ? username : 'Usuário não encontrado';
 });
 
-//comentado para decidir depois se vamos tirar
-// document.getElementById('price').addEventListener('input', function() {
-//     var value = this.value.trim();
-//     var priceLabel = document.getElementById('priceLabel');
-    
-//     if (value) {
-//         priceLabel.textContent = `Preço: R$ ${value}`;
-//     } else {
-//         priceLabel.textContent = 'Preço';
-//     }
-// });
-
+//chama o modal para exibir a imagem amplificada do produto ao clicar em "mostrar"
 function showImage(index) {
     const medicamentos = JSON.parse(localStorage.getItem('medicamentos'));
     let URL = medicamentos[index].imagem;
+    // mostra o modal, utilizando a API Sweetalert
     Swal.fire({
         imageUrl: URL,
         imageHeight: 500,
