@@ -1,22 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/login.css"> <!-- Seu CSS deve vir após o Bootstrap -->
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" type="image/jpg" href="./img/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="login-container">
-        <h1>Login</h1>
-        <form id="loginForm">
-            <input type="text" id="username" class="form-control" placeholder="Usuário" required>
-            <input type="password" id="password" class="form-control" placeholder="Senha" required>
-            <button type="submit" class="btn btn-primary mt-3">Entrar</button>
-        </form>
-        <p id="error" style="color: red;"></p>
+
+    <header>
+        <nav>
+            <div class="container-bar">
+                <img src="./img/logo.png" alt="logo" width="70px">
+                <span>
+                    <h1>Farmácia Dev</h1>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="identifica">
+        <img src="./img/icon.png" alt="logo" width="35px">
+        <h2>Identificação</h2>
     </div>
+
+    <div class="container-login">
+        <span>
+            <h3>Bem vindo(a)! Já é cliente da Farmácia Dev?</h3>
+        </span>
+
+        <form id="form-login" autocomplete="off">
+
+            <div class="input-container">
+                <label for="email" class="form-label text-start fw-semibold"> E-mail:</label>
+                <input class="form-control form-input" id="email" placeholder=" Digite seu e-mail" />
+                <span id="error-email" style="color: red"></span>
+            </div>
+
+            <div class="input-container">
+                <label for="senha" class="form-label text-start fw-semibold">Senha: </label>
+                <input class="form-control form-input" name="senha" type="password" id="senha"
+                    placeholder=" Digite sua senha" />
+                <span id="error-senha" style="color: red"></span>
+            </div>
+
+            <div class="button-container">
+                <button type="button" id="validaBotao" class="button-submit">Entrar</button>
+            </div>
+
+            <h4>
+                <label>Não possui conta na Fármacia Dev?</label>
+            </h4>
+
+            <div class="button-container">
+                <button type="button" id="criaConta" class="button-criar-conta">Criar Conta</button>
+            </div>
+
+        </form>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Farmácia Dev</h5>
+                    <p>Endereço: Rua das Flores, 0, Centro</p>
+                    <p>Telefone: (00) 95555-5555</p>
+                    <p>Email: contato@farmaciadev.com.br</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Medicamentos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <a href="#" class="me-2">Facebook</a>
+                    <a href="#" class="me-2">Instagram</a>
+                    <a href="#" class="me-2">X</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer-bar" class="text-center py-2">
+            <p class="mb-0">© 2024 Farmácia Dev. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
     <script src="scripts/login.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
