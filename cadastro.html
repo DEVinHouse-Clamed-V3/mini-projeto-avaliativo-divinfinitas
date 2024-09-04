@@ -32,9 +32,8 @@
 
 
     <div class="container-cadastro">
-        <form>
+        <form id="cadastroForm">
             <h6>Dados Pessoais</h6>
-
             <div class="row">
                 <div class="form-group col-md-3">
                     <label for="nome" class="form-label text-start fw-semibold">Nome Completo</label>
@@ -63,10 +62,10 @@
                 <div class="form-group col-md-2">
                     <label for="genero" class="form-label text-start fw-semibold">Gênero</label>
                     <select class="form-select" id="genero">
-                        <option>Selecione</option>
-                        <option>Masculino</option>
-                        <option>Feminino</option>
-                        <option>Prefiro não informar</option>
+                        <option value = "Selecione">Selecione</option>
+                        <option value = "Masculino">Masculino</option>
+                        <option value = "Feminino">Feminino</option>
+                        <option value = "outro">Outro</option>
                     </select>
                     <span id="error-genero" style="color: red"></span>
                 </div>
@@ -92,10 +91,10 @@
                     <input type="password" class="form-control" id="senha2">
                     <span id="error-senha2" style="color: red"></span>
                 </div>
-
                 <div class="button-container">
-                    <button type = "button" id="validaCadastro"  class= "button-criar-cadastro">Criar Conta</button>
+                    <button type="submit" id="validaCadastro" class="button-criar-cadastro">Criar Conta</button>
                 </div>
+
             </div>
         </form>
     </div>
