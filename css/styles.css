@@ -71,7 +71,17 @@ main {
     padding: 20px;
 }
 
-h1, h2 {
+h1 {
+    display: flex;
+    font-family: Arial, sans-serif !important;
+    font-size: 32px !important;
+    color: #f5f5f5 !important;
+    align-items: center !important;
+    align-content: center !important;
+    margin: 0 !important;
+}
+
+h2 {
     color: #333;
 }
 
