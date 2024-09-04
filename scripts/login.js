@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', function(event) {
-  
     // Adiciona o manipulador de eventos ao botão de login
     document.getElementById('validaBotao').addEventListener('click', function(event) {
         // Captura os valores do formulário
         const email_digitado = document.getElementById('email').value;
         const senha_digitada = document.getElementById('senha').value;
 
-        
         // Inicializa a flag de validade
         let isValid = true;
 
@@ -36,17 +34,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
         // Adiciona ao localStorage e redireciona se o formulário for válido
         if (isValid) {
-            // Cria um objeto de login
-            const login = {
-                id: Date.now(), // Usando Date.now() para garantir um id único
-                email: email_digitado,
-                senha: senha_digitada,
-            };
-
-            let listaNoLocalStorage = JSON.parse(localStorage.getItem("logins")) || [];
+            let listaNoLocalStorage = JSON.parse(localStorage.getItem("cadastros")) || [];
 
             // Verifica se há um login correspondente na lista
-            let verificaLogin = listaNoLocalStorage.find(login => login.email === email_digitado && login.senha === senha_digitada);
+            let verificaLogin = listaNoLocalStorage.find(cadastro => cadastro.email_digitado === email_digitado && cadastro.senha1_digitada === senha_digitada);
             
             if (verificaLogin) {
                 // Se o login for encontrado, redireciona para a página desejada
