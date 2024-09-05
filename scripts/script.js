@@ -105,7 +105,7 @@ function showImage(index) {
         imageHeight: 500,
         imageAlt: "A tall image",
         confirmButtonText: "Voltar"
-      })
+        })
 };
 
 
